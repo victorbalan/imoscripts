@@ -1,5 +1,5 @@
 
-function(){
+const weltMP = () => {
   const createLi = (val) => {
     let li = document.createElement('li');  
     let b = document.createElement('b'); 
@@ -42,4 +42,5 @@ function(){
     let children = ul.getElementsByTagName('li');  
     ul.append(createLi(getMP(children))); 
   }
-}();
+};
+weltMP();
