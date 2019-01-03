@@ -37,7 +37,7 @@ javascript:(function() {
       return Math.round(price/sup); 
     }; 
 
-    let details = document.getElementsByClassName('.details');
+    let details = document.getElementsByClassName('details');
     for(let i=0; i < details.length; i++) {
       let ul = details[i];
       let children = ul.getElementsByTagName('li');  
