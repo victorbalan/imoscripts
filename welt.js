@@ -45,4 +45,4 @@ javascript:(function() {
     }
   };
   weltMP();
-} (););
+} ());
