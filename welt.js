@@ -1,5 +1,5 @@
 
-javascript:(function(){
+function(){
   const createLi = (val) => {
     let li = document.createElement('li');  
     let b = document.createElement('b'); 
@@ -42,4 +42,4 @@ javascript:(function(){
     let children = ul.getElementsByTagName('li');  
     ul.append(createLi(getMP(children))); 
   }
-})();
+}();
