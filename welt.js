@@ -18,5 +18,9 @@ javascript:(function(){
   const getSup = (l) => { let value = getValueFromList(l, 'Suprafata', 1).wholeText.replace(/\D+/g, ''); return Number.parseFloat(value); }; 
   const getPrice = (l) => { let value = getValueFromList(l, 'Pret vanzare', 2).innerText.replace(/\D+/g, ''); return Number.parseFloat(value); }; 
   const getMP = (l) => { let sup = getSup(l); let price = getPrice(l); return Math.round(price/sup); }; 
-  let details = document.getElementsByClassName('.details'); details.forEach((ul) => { let children = ul.getElementsByTagName('li');  ul.append(createLi(getMP(children))); });
+  let details = document.getElementsByClassName('.details');
+  for(let i=0; i < details.length; i++) {
+    let ul = details[i];
+    let children = ul.getElementsByTagName('li');  ul.append(createLi(getMP(children))); 
+  }
 })();
