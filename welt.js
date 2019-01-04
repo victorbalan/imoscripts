@@ -6,7 +6,7 @@ javascript:(function() {
       let b = document.createElement('b'); 
       b.innerText = 'Eur/Mp'; 
       li.append(b); 
-      li.append(' : '); 
+      li.append(': '); 
       let price = document.createElement('span'); 
       price.classList.add('price');
       var priceVal = document.createElement('b'); 
